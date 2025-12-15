@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: poppins,sans-serif;
+        }
+
+        header{
+            background: #111;
+            padding: 15px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo{
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        nav ul li a:hover{
+            color: #00bcd4;
+        }
+        .hero{
+            height: 80vh;
+            background: linear-gradiant(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97');
+            background-size: cover; background-position: center;
+            color: white; display: flex;
+            flex-direction: column;
+            justify-content: center; padding-left: 50px;
+        }
+        .hero h1 span {
+            color: #00bcd4;
+
+             }
+             .btn{
+                margin-top: 20px;
+                padding:10px 20px;
+                background: #00bcd4;
+                color: white;
+                border-radius: 5px;
+                text-decoration: none; font-weight: bold;
+             }
+             .btn:hover{
+                background: #0097a7;
+             }
+             section{
+                padding: 60px 40px;
+                text-align: center;
+             }
+             .skill-box{
+                margin:20px auto;
+                width:70%;
+                text-align: left;
+             }
+             .bar{
+                width: 100%;
+                background: #ddd;
+                height: 10px;
+                border-radius: 5px;
+             }
+             .fill{
+                height: 10px;
+                background: #00bcd4;
+                border-radius: 5px;
+
+             }
+        footer{
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2 class="logo">Myportfolio</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <h1>Hello, I'm <space>Sindhu</space></h1>
+        <p>Frontend Developer | Designer | Student</p>
+        <a href="#contact" class="btn">Hire Me</a>
+</section>
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>I am a aspiring web developer passionate about creating beautiful and responsive websites</p>
+
+        </section>
+        <section id="skills" class="skills">
+            <h2>My Skills</h2>
+            <div class="skill-box"><h3>HTML</h3><div class="bar"><div class="fill" style="width:90%"></div></div></div>
+            <div class="skill-box"><h3>CSS</h3><div class="bar"><div class="fill" style="width:90%"></div></div></div>
+            <div class="skill-box"><h3>Javascript</h3><div class="bar"><div class="fill" style="width:90%"></div></div></div>
+
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p>Email: yourmail@gmail.com</p>
+            <p>Phone: +91 9876543228</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+        </footer> 
+
+</body>
+</html>
